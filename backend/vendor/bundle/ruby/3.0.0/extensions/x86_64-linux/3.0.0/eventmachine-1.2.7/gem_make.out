@@ -1,0 +1,16 @@
+current directory: /home/honeybear/Documents/Assignments/phase-3-sinatra-react-project/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20230301-43348-um0dbc.rb extconf.rb
+creating Makefile
+
+current directory: /home/honeybear/Documents/Assignments/phase-3-sinatra-react-project/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= clean
+
+current directory: /home/honeybear/Documents/Assignments/phase-3-sinatra-react-project/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\=
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/honeybear/Documents/Assignments/phase-3-sinatra-react-project/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20230301-43348-k1liv0

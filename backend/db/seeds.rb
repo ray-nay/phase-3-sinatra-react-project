@@ -112,6 +112,25 @@ user10 = User.create(name: Faker::Name.name)
 user11 = User.create(name: Faker::Name.name)
 user12 = User.create(name: Faker::Name.name)
 
+user13 = User.create(name: Faker::Name.name)
+user14 = User.create(name: Faker::Name.name)
+user15 = User.create(name: Faker::Name.name)
+
+
+user16 = User.create(name: Faker::Name.name)
+user17 = User.create(name: Faker::Name.name)
+user18 = User.create(name: Faker::Name.name)
+
+user19 = User.create(name: Faker::Name.name)
+user20 = User.create(name: Faker::Name.name)
+user21 = User.create(name: Faker::Name.name)
+
+user22 = User.create(name: Faker::Name.name)
+user23 = User.create(name: Faker::Name.name)
+user24 = User.create(name: Faker::Name.name)
+
+
+
 
 
 puts "✅ Seeded users!"
@@ -130,6 +149,18 @@ review9 = Review.create(house: house9, user: user9, comment: Faker::Lorem.senten
 review10 = Review.create(house: house10, user: user10, comment: Faker::Lorem.sentence)
 review11 = Review.create(house: house11, user: user11, comment: Faker::Lorem.sentence)
 review12 = Review.create(house: house12, user: user12, comment: Faker::Lorem.sentence)
+review13 = Review.create(house: house1, user: user1, comment: Faker::Lorem.sentence)
+review14 = Review.create(house: house2, user: user2, comment: Faker::Lorem.sentence)
+review15 = Review.create(house: house3, user: user3, comment: Faker::Lorem.sentence)
+review16 = Review.create(house: house4, user: user4, comment: Faker::Lorem.sentence)
+review17 = Review.create(house: house5, user: user5, comment: Faker::Lorem.sentence)
+review18 = Review.create(house: house6, user: user6, comment: Faker::Lorem.sentence)
+review19 = Review.create(house: house7, user: user7, comment: Faker::Lorem.sentence)
+review20 = Review.create(house: house8, user: user8, comment: Faker::Lorem.sentence)
+review21 = Review.create(house: house9, user: user9, comment: Faker::Lorem.sentence)
+review22 = Review.create(house: house10, user: user10, comment: Faker::Lorem.sentence)
+review23 = Review.create(house: house11, user: user11, comment: Faker::Lorem.sentence)
+review24 = Review.create(house: house12, user: user12, comment: Faker::Lorem.sentence)
 
 
 

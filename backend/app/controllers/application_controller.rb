@@ -26,4 +26,16 @@ class ApplicationController < Sinatra::Base
     house = House.find(params[:id])
     house.to_json
   end
+
+  # add a new house through the form 
+  post '/houses/:id' do 
+    house = House.create(
+      title: params[:title], 
+      desc: params[:desc], 
+      price: params[:price], 
+      img: params[:img] 
+     
+)
+    house.to_json
+  end 
 end

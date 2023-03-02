@@ -55,18 +55,18 @@ To add a new house, click on the Add House button on the navbar and insert all t
 
 ### Landing page 
 This is the landing page.
-![Landing page](./images/homepage.png)
+![Landing page](./backend/images/homepage.png)
 ### Form page that is used to submit a new house.
 This is the page that holds the form used to submit a new house.
-![Submission page](./images/submit.png)
+![Submission page](./backend/images/submit.png)
 ### House display page
 This is the page that displays the house description, as well as the price after the user has clicked on the View More.
-![View page](./images/house1.png)
+![View page](./backend/images/house1.png)
 
-![View more page](./images/house2.png)
+![View more page](./backend/images/house2.png)
 
 ### ERD
-![ERD](./images/erd.png)
+![ERD](./backend/images/erd.png)
 
 
 

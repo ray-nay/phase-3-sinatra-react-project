@@ -1,27 +1,6 @@
 puts "🌱 Seeding begins..."
 
 # Seed your database here
-puts "Creating users..."
-user1 = User.create(name: Faker::Name.name)
-user2 = User.create(name: Faker::Name.name)
-user3 = User.create(name: Faker::Name.name)
-
-
-user4 = User.create(name: Faker::Name.name)
-user5 = User.create(name: Faker::Name.name)
-user6 = User.create(name: Faker::Name.name)
-
-user7 = User.create(name: Faker::Name.name)
-user8 = User.create(name: Faker::Name.name)
-user9 = User.create(name: Faker::Name.name)
-
-user10 = User.create(name: Faker::Name.name)
-user11 = User.create(name: Faker::Name.name)
-user12 = User.create(name: Faker::Name.name)
-
-
-
-puts "✅ Seeded users!"
 
 puts "Seeding houses"
 
@@ -114,20 +93,43 @@ puts "Seeding houses"
 
 puts "✅ Seeded houses!"
 
+
+puts "Creating users..."
+user1 = User.create(name: Faker::Name.name)
+user2 = User.create(name: Faker::Name.name)
+user3 = User.create(name: Faker::Name.name)
+
+
+user4 = User.create(name: Faker::Name.name)
+user5 = User.create(name: Faker::Name.name)
+user6 = User.create(name: Faker::Name.name)
+
+user7 = User.create(name: Faker::Name.name)
+user8 = User.create(name: Faker::Name.name)
+user9 = User.create(name: Faker::Name.name)
+
+user10 = User.create(name: Faker::Name.name)
+user11 = User.create(name: Faker::Name.name)
+user12 = User.create(name: Faker::Name.name)
+
+
+
+puts "✅ Seeded users!"
+
 puts "seeding reviews"
 
-review1 = Review.create(house: house1, user_id: user1, comment: Faker::Lorem.sentence)
-review2 = Review.create(house: house2, user_id: user2, comment: Faker::Lorem.sentence)
-review3 = Review.create(house: house3, user_id: user3, comment: Faker::Lorem.sentence)
-review4 = Review.create(house: house4, user_id: user4, comment: Faker::Lorem.sentence)
-review5 = Review.create(house: house5, user_id: user5, comment: Faker::Lorem.sentence)
-review6 = Review.create(house: house6, user_id: user6, comment: Faker::Lorem.sentence)
-review7 = Review.create(house: house7, user_id: user7, comment: Faker::Lorem.sentence)
-review8 = Review.create(house: house8, user_id: user8, comment: Faker::Lorem.sentence)
-review9 = Review.create(house: house9, user_id: user9, comment: Faker::Lorem.sentence)
-review10 = Review.create(house: house10, user_id: user10, comment: Faker::Lorem.sentence)
-review11 = Review.create(house: house11, user_id: user11, comment: Faker::Lorem.sentence)
-review12 = Review.create(house: house12, user_id: user12, comment: Faker::Lorem.sentence)
+review1 = Review.create(house: house1, user: user1, comment: Faker::Lorem.sentence)
+review2 = Review.create(house: house2, user: user2, comment: Faker::Lorem.sentence)
+review3 = Review.create(house: house3, user: user3, comment: Faker::Lorem.sentence)
+review4 = Review.create(house: house4, user: user4, comment: Faker::Lorem.sentence)
+review5 = Review.create(house: house5, user: user5, comment: Faker::Lorem.sentence)
+review6 = Review.create(house: house6, user: user6, comment: Faker::Lorem.sentence)
+review7 = Review.create(house: house7, user: user7, comment: Faker::Lorem.sentence)
+review8 = Review.create(house: house8, user: user8, comment: Faker::Lorem.sentence)
+review9 = Review.create(house: house9, user: user9, comment: Faker::Lorem.sentence)
+review10 = Review.create(house: house10, user: user10, comment: Faker::Lorem.sentence)
+review11 = Review.create(house: house11, user: user11, comment: Faker::Lorem.sentence)
+review12 = Review.create(house: house12, user: user12, comment: Faker::Lorem.sentence)
 
 
 

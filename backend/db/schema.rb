@@ -24,10 +24,12 @@ ActiveRecord::Schema.define(version: 2023_03_01_144757) do
 
   create_table "reviews", force: :cascade do |t|
     t.string "comment"
-    t.integer "house_id"
     t.integer "user_id"
+    t.integer "house_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["house_id"], name: "index_reviews_on_house_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -36,4 +38,6 @@ ActiveRecord::Schema.define(version: 2023_03_01_144757) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "reviews", "houses"
+  add_foreign_key "reviews", "users"
 end

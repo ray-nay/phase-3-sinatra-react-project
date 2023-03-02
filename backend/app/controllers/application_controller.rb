@@ -5,8 +5,8 @@ class ApplicationController < Sinatra::Base
   # All routes for houses
 
   # get all houses
-  get '/houses' do
-   houses= House.all
+    get '/houses' do
+    houses = House.all
 
    houses.to_json
   end
@@ -16,7 +16,12 @@ class ApplicationController < Sinatra::Base
   patch '/houses/:id' do 
     house = House.find(params[:id])
     house.update(
-      body: params[:body]
+      title: params[:price],
+      location: params[:location],
+      desc: params[:desc],
+      price: params[:price],
+      img: params[:img]
+
     )
     house.to_json
   end 
@@ -28,14 +33,47 @@ class ApplicationController < Sinatra::Base
   end
 
   # add a new house through the form 
-  post '/houses/:id' do 
+  post '/houses' do 
     house = House.create(
       title: params[:title], 
+      location: params[:location],
       desc: params[:desc], 
       price: params[:price], 
       img: params[:img] 
-     
-)
+      )
     house.to_json
+  end 
+
+  #delete house
+  delete '/houses/:id' do 
+    house = House.find(params[:id])
+
+    house.destroy
+
+  end 
+
+  #routes for review 
+  #get
+
+  get '/reviews' do
+    reviews = Review.all
+ 
+    reviews.to_json
+   end
+
+
+
+   get '/reviews/:id' do
+    review = Review.find(params[:id])
+    review.to_json
+  end
+
+
+
+  post '/reviews' do 
+    review = Review.create(
+      comment: params[:comment], 
+    )
+    review.to_json
   end 
 end
